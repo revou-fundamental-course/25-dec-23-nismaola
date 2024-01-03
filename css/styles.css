@@ -1,24 +1,37 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #navigation-bar {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid blue;
+    border-bottom: 1px solid green;
 }
 
 #logo {
     margin-top: 0;
+    
 }
 
-.navigation> a{
-    text-decoration: none;
+#navigation-bar img {
+    width: 50px;
+    height: 50px;
 }
 
-/* INPUT SECTION */
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
 
 .input-luas-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 26px;
+}
+.input-keliling-section {
     display: flex;
     flex-direction: column;
     margin-top: 26px;
@@ -33,11 +46,11 @@ label {
     outline: none;
     border-radius: 10px;
     padding: 8px;
-    border: 1px solid blueviolet;
+    border: 1px solid green;
 }
 
 .katik-input:focus {
-    border: 1px solid red;
+    border: 1px solid black;
 }
 
 .buttons {
@@ -48,7 +61,7 @@ label {
 }
 
 button {
-    background-color: rgb(128, 128, 197);
+    background-color: rgb(95, 146, 95);
     color: white;
     padding: 10px 20px;
     border-radius: 10px;
@@ -57,10 +70,20 @@ button {
 }
 
 button:hover {
-    background-color: rgb(70, 70, 199);
+    background-color: rgb(65, 145, 65);
 }
 
 button:active {
-    background-color: rgb(15, 15, 195);
+    background-color: rgb(22, 101, 22);
     transform: translateY(2px);
+}
+
+@media only screen and (max-width:600px) {
+    h1 {
+        color: green;
+    }
+}
+
+footer {
+    text-align: right;
 }

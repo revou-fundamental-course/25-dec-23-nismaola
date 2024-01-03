@@ -3,24 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalkulator Segitiga</title>
+    <title>Katik | Kalkulator Matematik</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <script src="js/script.js"></script>
     <header id="navigation-bar">
-        <h3 id="logo">Katik</h3>
-        <nav class="navigation">
-            <a href="">Luas Segitiga</a>
-            <a href="">Keliling Segitiga</a>
-        </nav>
+        <img src="assets/logo-katik.png" alt="Logo" class="logo">
+        <h1 style="text-align: center;"> Selamat Datang di Official Website Katik</h1>
     </header>
+
+    <h2>Luas Segitiga</h2>
+    <div class="luas-segitiga"><img src="assets/luas-segitiga.jpg" width="350" height="200" style="margin-left: 90px;"></div>
+    <h2>Hitung Luas Segitiga</h2>
     <section class="input-luas-section">
-        <label for="" id="label-tinggi">Tinggi</label>
+        <label for="input-tinggi">Tinggi</label>
         <input type="number" id="input-tinggi" class="katik-input">
+        <label for="input-alas">Alas</label>
+        <input type="number" id="input-alas" class="katik-input">
         <div class="buttons">
-            <button>Hitung</button>
-            <button>Reset</button>
+            <button onclick="menghitungLuas()">Hitung</button>
+            <button onclick="resetLuas()">Reset</button>
         </div>
     </section>
+
+    <h2>Keliling Segitiga</h2>
+    <div class="keliling-segitiga"><img src="assets/keliling-segitiga.jpg" width="400" height="300" style="display: block;"></div>
+    <h2>Hitung Keliling Segitiga</h2>
+    <section class="input-keliling-section">
+        <label for="input-sisiA">Sisi A</label>
+        <input type="number" id="input-sisiA" class="katik-input">
+        <label for="input-sisiB">Sisi B</label>
+        <input type="number" id="input-sisiB" class="katik-input">
+        <label for="input-sisiC">Sisi C</label>
+        <input type="number" id="input-sisiC" class="katik-input">
+        <div class="buttons">
+            <button onclick="menghitungKeliling()">Hitung</button>
+            <button onclick="resetKeliling()">Reset</button>
+        </div>
+        <p id="hasilKeliling"></p>
+        </section>
+
+        <hr>
+        <footer>
+            <p>&copy Created By Maola</p>
+        </footer>
 </body>
 </html>
